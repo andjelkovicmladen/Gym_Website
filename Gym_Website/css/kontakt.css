@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    color: #333;
+}
+
+.kontakt-kontejner {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch ;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    height: auto;
+}
+
+.kontakt-kontejner img{
+    flex: 1;
+    max-width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 700px;
+    object-fit: cover;
+}
+
+.kontakt-forma{
+    flex: 1;
+    max-width: 50%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kontakt-forma h2{
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.kontakt-forma label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    
+}
+
+.kontakt-forma input,
+.kontakt-forma select,
+.kontakt-forma button {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+
+}
+
+.kontakt-forma input:focus,
+.kontakt-forma select:focus,
+.kontakt-forma button:focus {
+   border-color: #007bff;
+   outline: none;
+
+}
+
+.kontakt-forma button  {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.kontakt-forma button:hover {
+    background-color: #0056b3;
+}
+

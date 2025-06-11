@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    color: #333;
+}
+
+.mid {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin: 10%;
+    
+}
+
+.stavka {
+ display: flex;
+ align-items: center;
+ border: 2px solid white;
+ margin: 5%;
+ padding: 10px;
+ background-color: gray;
+
+}
+
+
+
+.stavka img {
+    width: 200px; /* Prilagodite veličinu slike */
+    height: 200px; /* Prilagodite veličinu slike */
+    object-fit: cover;
+    margin-right: 20px;
+    
+    
+}
+
+.stavka p {
+    color: black;
+}
+
+.stavka h1{
+
+    
+    text-align: center;
+    color: black;
+    
+
+
+
+}
+
+.stavka naslov {
+color: white;
+max-width: 60%;
+}
+    
+
