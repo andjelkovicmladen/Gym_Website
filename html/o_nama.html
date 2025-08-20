@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nama - Hercules Gym</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-left">
+        <img src="/img/Herkules2.png" alt="Herkules Gym Logo">
+        <h1>Herkules Gym</h1>
+    </div>
+    <nav>
+        <a href="index.html">Početna</a>
+        <a href="usluge.html">Usluge</a>
+        <a href="o_nama.html">O nama</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+<main>
+    <section class="about-box">
+        <div class="about-intro fade-in">
+            <h2>O nama</h2>
+            <p>Naša misija je da pomognemo svakom članu da dostigne svoj puni potencijal. 
+               Verujemo da teretana nije samo mesto za vežbanje, već i zajednica u kojoj se 
+               inspirišemo, podržavamo i rastemo zajedno. Naša vizija je stvaranje prostora 
+               gde svaki pojedinac može prevazići svoje granice i postati najbolja verzija sebe.</p>
+        </div>
+
+        <div class="search-box">
+  <input type="text" id="search" placeholder="Pretraži stavke...">
+</div>
+<div id="search-results"></div>
+
+<script>
+  const items = [
+    { name: "Kadrovi", text: "Naš stručni tim trenera spreman je da vam pomogne da postignete ciljeve." },
+    { name: "Funkcionalnost", text: "Individualni i grupni treninzi prilagođeni vašim potrebama." },
+    { name: "Opremljenost", text: "Moderna oprema i prijatan ambijent za maksimalne rezultate." },
+    { name: "Motivacija", text: "Radimo zajedno na izgradnji vaše snage i kondicije." }
+  ];
+
+  document.getElementById("search").addEventListener("input", e => {
+    const val = e.target.value.toLowerCase();
+    const results = items.filter(i => i.name.toLowerCase().includes(val) || i.text.toLowerCase().includes(val));
+    document.getElementById("search-results").innerHTML = results
+      .map(r => `<p><b>${r.name}:</b> ${r.text}</p>`)
+      .join("");
+  });
+</script>
+
+
+        <div class="about-section">
+            <div class="about-item fade-in">
+                <h3>Kadrovi</h3>
+                <img src="/img/Personal_trainers.jpg" alt="Trener 1">
+                <p>Naš stručni tim trenera spreman je da vam pomogne da postignete ciljeve.</p>
+            </div>
+            <div class="about-item fade-in">
+                <h3>Funkcionalnost</h3>
+                <img src="/img/FU2.jpg" alt="Trener 2">
+                <p>Individualni i grupni treninzi prilagođeni vašim potrebama.</p>
+            </div>
+            <div class="about-item fade-in">
+                <h3>Opremljenost</h3>
+                <img src="/img/oprema.jpg" alt="Unutrašnjost teretane">
+                <p>Moderna oprema i prijatan ambijent za maksimalne rezultate.</p>
+            </div>
+            <div class="about-item fade-in">
+                <h3>Motivacija</h3>
+                <img src="/img/Be Stronger Than Your Excuses Sign, Large Gym Wall….jpg" alt="Tim">
+                <p>Radimo zajedno na izgradnji vaše snage i kondicije.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
+
+
