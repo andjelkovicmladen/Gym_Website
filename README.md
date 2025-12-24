@@ -1,7 +1,7 @@
 
 ---
 
-# 2️⃣ Gym_Website
+# Gym_Website
 
 ```markdown
 # Gym_Website
